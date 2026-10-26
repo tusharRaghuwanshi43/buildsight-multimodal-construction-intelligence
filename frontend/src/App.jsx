@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
 import './App.css'
+import logo from './assets/logo.png'
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 const readThemePreference = () => {
@@ -784,7 +785,7 @@ function App() {
       <div className="brand">
         <img
           className="brand-logo"
-          src="/bs.png"
+          src={logo}
           alt="BuildSight logo"
         />
         <div className="brand-copy">
