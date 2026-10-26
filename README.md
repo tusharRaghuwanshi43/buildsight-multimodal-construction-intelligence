@@ -1,15 +1,16 @@
 <div align="center">
   <img src="./frontend/src/assets/logo.png" alt="BuildSight logo" width="110" />
 
-  # BuildSight · FIELD INTELLIGENCE
+# BuildSight · SITE INSIGHTS
 
-  **AI-Powered Construction Intelligence**
+**AI-Powered Construction Intelligence**
 
-  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-  [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
-  [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-  [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-  [![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+
 </div>
 
 <br />
@@ -30,31 +31,38 @@ BuildSight brings visual site observations, preliminary construction estimates, 
 ## ✨ Key Features
 
 ### 🦺 Site Safety Audit
+
 - Uses Gemini multimodal image analysis to identify visible site-safety concerns.
 - Validates provider results against expected response structures.
 - Reports AI analysis as unavailable when the required API configuration is missing, rather than inventing results.
 
 ### 🧱 Crack Analysis
+
 - Provides AI-assisted descriptions of visible crack patterns and cautious next steps.
 - Does not infer reliable crack dimensions from ordinary photos without a suitable scale.
 
 ### 📐 Planning & Valuation
+
 - Generates indicative INR construction estimates from inputs such as area, location tier, property tier, and structure type.
 - Includes editable material quantities, cost breakdowns, schedules, and resource plans.
 
 ### 🤖 Construction Assistant
+
 - Offers construction guidance and a daily-report workflow.
 - Labels offline guidance appropriately; Gemini-powered responses require a configured backend API key.
 
 ### 🌦️ Weather Insights
+
 - Uses Open-Meteo geocoding, current conditions, and a three-day forecast.
 - Supports a user-entered location or coordinates and reports unavailable data when a location or provider cannot be resolved.
 
 ### 📄 Reports & Usability
+
 - Supports structured safety/crack assessment exports and assistant report copying/export.
 - Includes browser printing and a saved light/dark theme preference.
 
 ### 🔐 API Safeguards
+
 - Configurable CORS origins and validated Pydantic response models.
 - Keeps the Gemini API key on the backend rather than exposing it to browser code.
 
@@ -62,37 +70,38 @@ BuildSight brings visual site observations, preliminary construction estimates, 
 
 ## 📸 Screenshots
 
-| Overview | Site Safety Audit |
-| :---: | :---: |
+|                                   Overview                                   |                                  Site Safety Audit                                   |
+| :--------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
 | ![BuildSight overview dashboard](./frontend/public/screenshots/overview.png) | ![BuildSight site safety audit](./frontend/public/screenshots/site-safety-audit.png) |
 
-| Crack Analysis | Planning & Valuation |
-| :---: | :---: |
+|                                 Crack Analysis                                 |                                    Planning & Valuation                                    |
+| :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
 | ![BuildSight crack analysis](./frontend/public/screenshots/crack-analysis.png) | ![BuildSight planning and valuation](./frontend/public/screenshots/planning-valuation.png) |
 
-| Construction Assistant |
-| :---: |
+|                                     Construction Assistant                                     |
+| :--------------------------------------------------------------------------------------------: |
 | ![BuildSight construction assistant](./frontend/public/screenshots/construction-assistant.png) |
-
-> If these screenshots have not been added yet, upload the images to `docs/screenshots/` using the filenames above, or remove the image links until they are available.
 
 ---
 
 ## 🛠️ Technology Stack
 
 **Frontend**
+
 - React
 - Vite
 - Axios
 - CSS
 
 **Backend**
+
 - Python
 - FastAPI
 - Pydantic
 - Uvicorn
 
 **AI & External Data**
+
 - Google Gemini API for optional image analysis and assistant features
 - Open-Meteo for weather and geocoding data
 
@@ -275,4 +284,3 @@ Please test changes locally and avoid committing credentials, `.env` files, virt
 BuildSight is an informational decision-support tool, not a substitute for certified engineering judgment, professional safety inspections, or applicable local requirements. AI image observations may be incomplete or incorrect and do not certify PPE compliance, structural integrity, or code compliance. Crack dimensions cannot be reliably measured from ordinary photos without an appropriate scale and assessment method. Cost and schedule outputs are preliminary estimates, not professional valuations, quotations, or guarantees. Have qualified professionals review findings before using them in real projects.
 
 ---
-
